@@ -1,14 +1,30 @@
+body {
+    background-color: rgb(192,192,188);
+}
+
+.body {
+    width: 21cm;
+    height: 29.7cm;
+    /* to centre page on screen*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #F9F9F9;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 .header {
-    height: 150px;
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: #212834;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
@@ -18,36 +34,142 @@
 .header h1 {
     font-family: 'Quicksand', sans-serif;
     width: 100%;
-    color: white;
-    text-align: center;
+    color: black;
+    text-align: left;
     margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 .header p {
     font-family: 'Quicksand', sans-serif;
-    color: aqua;
+    color: #51C2D5;
     font-weight: 300;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 50px;
 }
 
 .sort-information {
     margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #DAFDFF;
+    padding: 15px;
+    border-radius: 20px;
 }
 
 .sort-information-item {
     margin: 0 10px;
+    display: block;
+}
+
+.sort-information-item:last-child {
+    margin-top: 20px;
 }
 
 .sort-information-item i {
     padding: 10px;
     border-radius: 50%;
     color: white;
-    background-color: #0B77C5;
+    background-color: #51C2D5;
 }
 
 .sort-information-item span {
     margin-left: 3px;
-    color: aqua;
+    color: black;
+}
+
+.information {
+    margin: 20px 20px 0 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.information-item {
+    flex: 50%;
+    margin-bottom: 10px;
+}
+
+.information-item p {
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+    display: block;
+}
+/*
+.title::before {
+    content: "";
+    height: 40px;
+    width: 4px;
+    background-color: #212834;
+    position: absolute;
+    left: -6px;
+    top: 0px;
+}*/
+
+.title {
+    height: 30px;
+    display: inline-block;
+    padding: 5px 200px 5px 10px;
+    background-color: #51C2D5;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+}
+
+.education table {
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+}
+
+.education table tr td {
+    padding-bottom: 5px;
+}
+
+.education table tr td:first-child {
+    width: 100px;
+    display: inline-block;
+}
+
+.education table tr td:last-child {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.project h1 {
+    margin-bottom: 10px;
+}
+
+.project a:first-child {
+    margin-top: 20px;
+}
+
+.project a {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project a:hover {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+.project p {
+    margin-top: 0px;
+    font-weight: 400;
 }
