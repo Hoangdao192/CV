@@ -17,6 +17,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .header {
@@ -43,7 +44,7 @@ body {
 
 .header p {
     font-family: 'Quicksand', sans-serif;
-    color: #51C2D5;
+    color: black;
     font-weight: 300;
     width: 100%;
     text-align: left;
@@ -57,7 +58,6 @@ body {
     margin-right: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     background-color: #DAFDFF;
     padding: 15px;
     border-radius: 20px;
@@ -65,10 +65,10 @@ body {
 
 .sort-information-item {
     margin: 0 10px;
-    display: block;
+    display: inline;
 }
 
-.sort-information-item:last-child {
+.sort-information-item:last-child, .sort-information-item:nth-child(5) {
     margin-top: 20px;
 }
 
@@ -79,13 +79,17 @@ body {
     background-color: #51C2D5;
 }
 
+.sort-information-item:last-child i {
+    padding: 10px 12px;
+}
+
 .sort-information-item span {
     margin-left: 3px;
     color: black;
 }
 
 .information {
-    margin: 20px 20px 0 50px;
+    margin: 40px 20px 0 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -94,6 +98,7 @@ body {
 
 .information-item {
     flex: 50%;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -103,21 +108,29 @@ body {
     margin-top: 10px;
     display: block;
 }
-/*
-.title::before {
-    content: "";
+
+.education i {
+    color: white;
+    background-color: #51C2D5;
+    border-radius: 50%;
+    padding: 12px 10px;
+}
+
+.before-title {
+    display: inline-block;
+    width: 3px;
     height: 40px;
-    width: 4px;
-    background-color: #212834;
+    background-color: #51C2D5;
+    margin-right: 10px;
     position: absolute;
-    left: -6px;
-    top: 0px;
-}*/
+}
 
 .title {
     height: 30px;
     display: inline-block;
-    padding: 5px 200px 5px 10px;
+    width: 50%;
+    margin-left: 6px;
+    padding: 5px 120px 5px 10px;
     background-color: #51C2D5;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -125,6 +138,18 @@ body {
     font-weight: 300;
     font-size: 22px;
     color: white;
+}
+
+.skill h1 {
+    margin-left: 5px;
+}
+
+.hobby h1 {
+    margin-left: 5px;
+}
+
+.other h1 {
+    margin-left: 5px;
 }
 
 .education table {
@@ -145,6 +170,10 @@ body {
 .education table tr td:last-child {
     padding-left: 15px;
     text-align: left;
+}
+
+.education tr td:last-child span {
+    font-weight: 400;
 }
 
 .project h1 {
@@ -172,4 +201,10 @@ body {
 .project p {
     margin-top: 0px;
     font-weight: 400;
+}
+
+.other span {
+    margin-left: 20px;
+    margin-right: 40px;
+    display: block;
 }
